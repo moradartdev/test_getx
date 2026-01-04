@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:test_getx/controllers/page_one_controller.dart';
 
 class PageOne extends StatelessWidget {
   const PageOne({super.key});
@@ -6,15 +8,33 @@ class PageOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('Page One')),
       body: Center(
-        child: Text(
-          'welcome to page one screen',
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 19,
-            fontWeight: FontWeight.w700,
-          ),
-          ),
+        child: GetBuilder(
+          init: PageOneController(),
+          builder: (controller) {
+            return Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {
+                    controller.decrement();
+                  },
+                  icon: Icon(Icons.remove),
+                ),
+                SizedBox(width: 20),
+                Text('${controller.index}'),
+                SizedBox(width: 20),
+                IconButton(
+                  onPressed: () {
+                    controller.increment();
+                  },
+                  icon: Icon(Icons.add),
+                ),
+              ],
+            );
+          },
+        ),
       ),
     );
   }
