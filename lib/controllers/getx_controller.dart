@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class PageThwoController extends GetxController {
+class TestGetxControllerr extends GetxController {
   RxInt value1 = 0.obs;
   RxInt value2 = 0.obs;
 

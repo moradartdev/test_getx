@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/state_manager.dart';
-import 'package:test_getx/controllers/page_thwo_controller.dart';
+import 'package:test_getx/controllers/getx_controller.dart';
 
 class PageThwo extends StatelessWidget {
   const PageThwo({super.key});
@@ -10,7 +10,7 @@ class PageThwo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Test getx')),
       body: GetX(
-        init: PageThwoController(),
+        init: TestGetxControllerr(),
         builder: (controller) {
           return Center(
             child: Column(
