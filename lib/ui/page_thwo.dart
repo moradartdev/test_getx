@@ -8,7 +8,7 @@ class PageThwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('PAGE THWO')),
+      appBar: AppBar(title: Text('Test getx')),
       body: GetX(
         init: PageThwoController(),
         builder: (controller) {

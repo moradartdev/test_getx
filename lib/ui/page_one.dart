@@ -8,7 +8,7 @@ class PageOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Page One')),
+      appBar: AppBar(title: Text('Test get builder')),
       body: Center(
         child: GetBuilder(
           init: PageOneController(),
