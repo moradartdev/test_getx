@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:test_getx/controllers/page_one_controller.dart';
+import 'package:test_getx/controllers/get_builder_controller.dart';
 
 class PageOne extends StatelessWidget {
   const PageOne({super.key});
@@ -11,7 +11,7 @@ class PageOne extends StatelessWidget {
       appBar: AppBar(title: Text('Test get builder')),
       body: Center(
         child: GetBuilder(
-          init: PageOneController(),
+          init: GetBuilderController(),
           builder: (controller) {
             return Row(
               mainAxisAlignment: MainAxisAlignment.center,

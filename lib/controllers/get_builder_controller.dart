@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class PageOneController extends GetxController {
+class GetBuilderController extends GetxController {
   int index = 0;
   void increment() {
     index++;
